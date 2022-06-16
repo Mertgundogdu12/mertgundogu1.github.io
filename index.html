@@ -1,236 +1,180 @@
-<html>
-    <head>
-        <title>Hacked By Pâyidar</title>
-
-        <!-- Meta -->
-        <meta name="title" content="Hacked By Pâyidar" />
-        <meta name="description" content="Hacked By Pâyidar" />
-        <meta name="keywords" content="Hacked By Pâyidar" />
-        <meta name="author" content="Hacked By Pâyidar" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0" />
-        <meta name="theme-color" content="#ff0000" />
-        <meta name="og:site_name" content="Hacked By Pâyidar" />
-        <!-- Link -->
-        <link rel="icon" href="img/a_b0f355eaff6c51e57238d8ee62f86da8.gif">
-        <!-- Script -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    </head>
-    <body onkeydown="return false" onload="play()">
-        <style>
-            /* FONT */
-            @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
-
-
-
-            /* MY İNDEX CODES | PÂYİDAR */
-            embed, canvas{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            body{
-                background-color: black;
-                margin: 0;
-                user-select: none;
-            }
-            .frame{
-                background-color: rgba(0, 0, 0, .5);
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-            }
-            .head img{
-                display: block;
-                margin: 25 auto -50;
-            }
-
-            .hacked{
-                margin-top: 25px;
-                padding: 5px;
-            }
-            .hacked h1{
-                font-family: 'Metal Mania', cursive;
-                font-weight: bolder;
-                color: red;
-/*                 animation: payidar .2s infinite alternate; */
-                text-align: center;
-                font-size: 100px;
-                line-height: 1.3;
-            }
-            .hacked span{
-                color: lime;
-            }
-            .hacked p{
-                font-family: 'Metal Mania', cursive;
-                font-weight: bolder;
-                text-align: center;
-                color: lime;
-                font-size: 50px;
-            }
-            .hacked .button{
-                display: flex;
-                justify-content: center;
-            }
-            .hacked .button a{
-                margin-left: 20px;
-                background-color: white;
-                border: none;
-                font-size: 30px;
-                font-family: 'Patrick Hand', cursive;;
-                padding: 10px;
-                transition: 250ms all;
-                border-radius: 5px;
-                color: black;
-                text-decoration: none;
-                z-index: 99999;
-            }
-            .hacked .button a:hover{
-                box-shadow: 0px 0px 0px 2px white;
-                background-color: transparent;
-                color: white;
-            }
-
-            @media screen and (max-width: 800px){
-                body{
-                    background-image: url(https://cdn.discordapp.com/attachments/842440840471248916/872480143346651226/Z.png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                }
-                .frame{
-                    display: initial;
-                    z-index: -1;
-                }
-                .head img{
-                    display: none;
-                }
-                .hacked h1{
-                    animation: initial;
-                    font-size: 50px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    text-align: center;
-                    margin: 20px;
-                }
-                .hacked p{
-                    margin-top: 130px;
-                    font-size: 30px;
-                }
-                .hacked .button{
-                    display: flex;
-                    z-index: 999 !important;
-                    align-items: center;
-                    flex-wrap: wrap;
-                }
-                .hacked .button a{
-                    font-size: 17px;
-                    display: flex;
-                    justify-content: space-around;
-                    flex-direction: column;
-                    margin-bottom: 20px;
-                    text-align: center;
-                    margin-left: 10px;
-                    width: 120px;
-                }
-            }
-
-/*             @keyframes payidar{
-                0%, 18%, 22%, 25%, 53%, 57%, 100% {
-                    text-shadow:
-                    0 0 11px #333,
-                    0 0 15px #333,
-                    0 0 20px red,
-                    0 0 40px red,
-                    0 0 80px red
-                }
-                20%, 24%, 55% {
-                    text-shadow: none;
-                }
-            } */
-        </style>
-        <!-- Hacked By Pâyidar -->
-        <div class="frame"></div>
-        <div class="head">
-            <img src="https://cdn.discordapp.com/attachments/872476066181173318/875105421185130517/unknown.png" alt="Hacked By Pâyidar" title="Hacked By Pâyidar">
-        </div>
-
-        <audio id="sound" src="Taladro - Deniz Kızı (2013).mp3"></audio>
-
-        <div class="hacked">
-            <h1>HACKED BY <span>PÂYIDAR</span></h1>
-            <p>Hello Admin, System Hacked!</p>
-            <div class="button">
-                <a href="https://discord.gg/KK5nFcKYcQ">Discord</a>
-                <a href="https://instagram.com/06.kadirx">İnstagram</a>
-                <a href="#" onclick="document.getElementById('sound').play()">Music Start</a>
-            </div>
-        </div>
-        <!-- /Hacked By Pâyidar -->
-        <script type="text/javascript">
-            function IE(e) {
-                 if (navigator.appName == "Microsoft Internet Explorer" && (event.button == "2" || event.button == "3")) {
-                      alert('KODLARI ÇALMAYA ÇALIŞMA ANANI SİKERİM SENİN');
-                      return false;
-                 }
-            }
-
-            // HACKED BY PÂYİDAR 
-
-            function NS(e) {
-                 if (document.layers || (document.getElementById && !document.all)) {
-                      if (e.which == "2" || e.which == "3") {
-                           alert('KODLARI ÇALMAYA ÇALIŞMA ANANI SİKERİM SENİN');
-                           return false;
-                      }
-                 }
-            }
-            document.onmousedown=IE;document.onmouseup=NS;document.oncontextmenu=new Function("return false");
-        
-
-            var default1 = "....";
-            var text1 = "HACKED BY";
-            var text2 = "PÂYİDAR";
-            var text3 = "ANANIZI SİKERİM";
-            var text4 = "OROSPU ÇOCUKLARI";
-            var changeRate = 500;
-            var messageNumber = 0;
-
-            function changeStatus() {
-                if (messageNumber == 0) {
-                    window.status=default1;
-                    document.title=default1;
-                }
-                else if (messageNumber == 1) {
-                    window.status=text1;
-                    document.title=text1;
-                }
-                else if (messageNumber == 2) {
-                    window.status=text2;
-                    document.title=text2;
-                }
-                else if (messageNumber == 3) {
-                    window.status=text3;
-                    document.title=text3;
-                }
-                else if (messageNumber == 4) {
-                    window.status=text4;
-                    document.title=text4;
-                    messageNumber = 0;
-                }
-
-                messageNumber++;
-                setTimeout("changeStatus();",changeRate);    
-            }           
-            changeStatus();
-        </script>
-      
-    </body>
-</html>
+<html><head><title>HACKED BY PÂYİDAR CODE</title><meta name="title" content="HACKED BY PÂYİDAR CODE"><meta name="description" content="Hello Admin, Hacked By Pâyidar Code"><meta name="keywords" content="hacked by payidar, hacked by payidar code, HACKED BY PÂYİDAR CODE, HACKED BY PAYİDAR CODE"><meta name="robots" content="index, follow"><meta name="charset" content="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script></head><body oncontextmenu="return false;" onclick="muzik()" onkeydown="return false;"><style>
+ @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+ 
+ body{
+ background-color: black;
+ font-family: 'Rajdhani', sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0;
+ background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+   url('https://media.discordapp.net/attachments/921375437819625495/975414653851156531/yonetim_ekibi_wallpaper.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ z-index: 9999999999999 !important;
+ }
+ *{
+ box-sizing: border-box;
+ }
+ .payidarcode{
+ color: #fff;
+ text-align: center;
+ }
+ .payidarcode h1{
+ font-size: 60px;
+ }
+ .payidarcode span{
+ color: red;
+ }
+ canvas{
+ display: block;
+ }
+ #particles-js{
+ position: absolute;
+ width: 70%;
+ height: 50%;
+ background-image: url("");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ z-index: 50;
+ }
+ .payidarcode_2{
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%);
+ font-size: 40px;
+ color: #999;
+ margin-top: -60px;
+ }
+ .payidarcode_2 p{
+ height: 50px;
+ float: left;
+ margin-right: 0.3em;
+ }
+ .payidarcode_2 b{
+ float: left;
+ overflow: hidden;
+ position: relative;
+ height: 50px;
+ top: 40px;
+ }
+ .payidarcode_2 .payi{
+ display: inline-block;
+ color: #fff;
+ position: relative;
+ white-space: nowrap;
+ top: 0;
+ left: 0;
+ 
+ 
+ /*animation*/
+ -webkit-animation:move 15s;
+ -moz-animation:move 15s;
+ -ms-animation:move 15s;
+ -o-animation:move 15s;
+ animation:move 15s;
+ /*animation-iteration-count*/
+ -webkit-animation-iteration-count:infinite;
+ -moz-animation-iteration-count:infinite;
+ -ms-animation-iteration-count:infinite;
+ -o-animation-iteration-count:infinite;
+ animation-iteration-count:infinite;
+ /*animation-delay*/
+ -webkit-animation-delay:5s;
+ -moz-animation-delay:5s;
+ -ms-animation-delay:5s;
+ -o-animation-delay:5s;
+ animation-delay:5s;
+ }
+ @keyframes move{
+ 0% { top: 0px; }
+ 20% { top: -50px; }
+ 40% { top: -100px; }
+ 60% { top: -150px; }
+ 80% { top: -200px; }
+ }
+ 
+ @-webkit-keyframes move{
+ 0% { top: 0px; }
+ 20% { top: -50px; }
+ 40% { top: -100px; }
+ 60% { top: -150px; }
+ 80% { top: -200px; }
+ }
+ @-moz-keyframes move{
+ 0% { top: 0px; }
+ 20% { top: -50px; }
+ 40% { top: -100px; }
+ 60% { top: -150px; }
+ 80% { top: -200px; }
+ }
+ @-o-keyframes move{
+ 0% { top: 0px; }
+ 20% { top: -50px; }
+ 40% { top: -100px; }
+ 60% { top: -150px; }
+ 80% { top: -200px; }
+ }
+ @keyframes move{
+ 0% { top: 0px; }
+ 20% { top: -50px; }
+ 40% { top: -100px; }
+ 60% { top: -150px; }
+ 80% { top: -200px; }
+ }
+ 
+ @media screen and (max-width: 800px){
+ .payidarcode_2{
+ position: absolute;
+ left: 50%;
+ top: 51%;
+ transform: translate(-50%, -51%);
+ font-size: 30px;
+ color: #999;
+ }
+ .payidarcode_2 b{
+ float: left;
+ overflow: hidden;
+ position: relative;
+ height: 50px;
+ width: 100%;
+ top: 40px;
+ }
+ .payidarcode h1{
+ font-size: 35px;
+ width: 100%;
+ }
+ .payidarcode_2{
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%);
+ font-size: 40px;
+ color: #999;
+ margin-top: -60px;
+ }
+ .payidarcode_2 .payi{
+ display: inline-block;
+ color: #fff;
+ position: relative;
+ white-space: initial;
+ top: 0;
+ left: 0;
+ }
+ }
+ </style><div class="payidarcode"><div id="particles-js"><canvas class="particles-js-canvas-el" width="896" height="462" style="width: 100%; height: 100%;"></canvas></div><h1>HACKED BY <span>PÂYİDAR CODE</span></h1><div class="payidarcode_2"><b><div class="payi">
+ NE MUTLU TÜRKÜM DİYENE!<br> 
+ TURKİSH HACKERS<br>
+ KABUSUN OLUR RÜYANA GİRERİM<br>
+ YA DEVLET BAŞA, YA KUZGUN LEŞE.<br>
+ KABUSUN OLUR RÜYANA GİRERİM.<br>
+ DEVLET KURAR, DEVLET YIKARIM.
+ </div></b></div><br><br><p>Greetz: <font color="red">Pâyidar ~ SrStâr ~ Ayselen</font></p></div><audio src="https://cdn.discordapp.com/attachments/921375437819625495/975418220951535638/yt1s.com_-_CVRTOON_Fetih_V3_Trap_Video.mp3" id="pc"></audio><script>
+ var payidar = document.querySelector('#pc')
+ 
+ function muzik(){
+ payidar.play();
+ }
+ </script><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="https://threejs.org/examples/js/libs/stats.min.js"></script><script src="https://cdn.jsdelivr.net/gh/payidarofficial/particle-js@main/config-edit.js"></script></body></html>
